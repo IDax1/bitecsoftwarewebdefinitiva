@@ -29,27 +29,42 @@ hamburger.addEventListener('click', () => {
   mobileMenu.classList.toggle('open');
 });
 
-// Close mobile menu on link click
 mobileMenu.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => mobileMenu.classList.remove('open'));
 });
 
-// Contact form mock submit
+// Contact form — Formspree
 const form = document.getElementById('contact-form');
 const formSuccess = document.getElementById('form-success');
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const btn = form.querySelector('button[type="submit"]');
   btn.textContent = 'Enviando...';
   btn.disabled = true;
-  setTimeout(() => {
-    formSuccess.classList.add('show');
-    btn.textContent = 'Enviar mensaje →';
-    btn.disabled = false;
-    form.reset();
-    setTimeout(() => formSuccess.classList.remove('show'), 5000);
-  }, 1200);
+
+  const data = new FormData(form);
+
+  try {
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      formSuccess.classList.add('show');
+      form.reset();
+      setTimeout(() => formSuccess.classList.remove('show'), 5000);
+    } else {
+      alert('Hubo un error al enviar el mensaje. Por favor intenta de nuevo.');
+    }
+  } catch {
+    alert('Error de conexión. Por favor intenta de nuevo.');
+  }
+
+  btn.textContent = 'Enviar mensaje →';
+  btn.disabled = false;
 });
 
 // Fade-in on scroll

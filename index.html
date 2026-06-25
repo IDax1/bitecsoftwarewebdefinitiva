@@ -56,7 +56,7 @@
         <div class="fc-icon">🔒</div>
         <div>
           <div class="fc-title">Acceso VPN</div>
-          <div class="fc-sub">Tailscale incluido</div>
+          <div class="fc-sub">Plan premium incluido</div>
         </div>
       </div>
       <div class="floating-card card2">
@@ -81,7 +81,7 @@
         <div class="cw-body">
           <div class="cw-line"><span class="kw">const</span> <span class="var">bitec</span> = {</div>
           <div class="cw-line">&nbsp;&nbsp;enfoque: <span class="str">'Pymes chilenas'</span>,</div>
-          <div class="cw-line">&nbsp;&nbsp;acceso: <span class="str">'VPN Tailscale'</span>,</div>
+          <div class="cw-line">&nbsp;&nbsp;acceso: <span class="str">'VPN plan premium'</span>,</div>
           <div class="cw-line">&nbsp;&nbsp;soporte: <span class="str">'24/7 real 🇨🇱'</span>,</div>
           <div class="cw-line">};</div>
           <div class="cw-line cw-blank"></div>
@@ -114,9 +114,9 @@
           <div class="featured-badge">Más solicitado</div>
           <div class="service-icon">🔒</div>
           <h3>Acceso seguro vía VPN</h3>
-          <p>Instalamos y configuramos Tailscale para que tú y tu equipo accedan al sistema de forma segura desde cualquier lugar.</p>
+          <p>Configuramos y administramos una VPN de alto rendimiento para que tú y tu equipo accedan al sistema de forma segura desde cualquier lugar.</p>
           <ul class="service-list">
-            <li>Configuración VPN incluida</li>
+            <li>VPN con plan premium incluido</li>
             <li>Acceso remoto sin complicaciones</li>
             <li>Sin puertos expuestos al internet</li>
           </ul>
@@ -202,7 +202,7 @@
             <span class="value-icon">🔒</span>
             <div>
               <strong>Seguridad sin complicaciones</strong>
-              <p>Acceso vía VPN Tailscale configurada por nosotros, para que solo tú y tu equipo entren.</p>
+              <p>Acceso vía VPN con plan premium, configurada y administrada por nosotros para que solo tú y tu equipo puedan entrar.</p>
             </div>
           </div>
         </div>
@@ -228,7 +228,7 @@
         <div class="tech-item"><span>SQLite / MySQL</span></div>
         <div class="tech-item"><span>Linux Server</span></div>
         <div class="tech-item"><span>Windows Server</span></div>
-        <div class="tech-item"><span>Tailscale VPN</span></div>
+        <div class="tech-item"><span>VPN Premium</span></div>
         <div class="tech-item"><span>Nginx</span></div>
         <div class="tech-item"><span>PWA</span></div>
       </div>
@@ -369,28 +369,28 @@
           </div>
         </div>
       </div>
-      <form class="contact-form" id="contact-form">
+      <form class="contact-form" id="contact-form" action="https://formspree.io/f/xdarewlq" method="POST">
         <div class="form-group">
-          <input type="text" placeholder="Tu nombre" required />
+          <input type="text" name="nombre" placeholder="Tu nombre" required />
         </div>
         <div class="form-group">
-          <input type="email" placeholder="Tu correo electrónico" required />
+          <input type="email" name="email" placeholder="Tu correo electrónico" required />
         </div>
         <div class="form-group">
-          <input type="text" placeholder="Empresa (opcional)" />
+          <input type="text" name="empresa" placeholder="Empresa (opcional)" />
         </div>
         <div class="form-group">
-          <select>
+          <select name="servicio">
             <option value="" disabled selected>¿Qué servicio necesitas?</option>
             <option>Sistema a medida</option>
             <option>Sistema de Inventario</option>
             <option>Órdenes de Trabajo</option>
-            <option>Acceso VPN Tailscale</option>
+            <option>Acceso VPN</option>
             <option>Soporte y Mantención</option>
           </select>
         </div>
         <div class="form-group">
-          <textarea placeholder="Cuéntanos sobre tu proyecto..." rows="4"></textarea>
+          <textarea name="mensaje" placeholder="Cuéntanos sobre tu proyecto..." rows="4"></textarea>
         </div>
         <button type="submit" class="btn-primary btn-full">Enviar mensaje →</button>
         <div class="form-success" id="form-success">¡Mensaje enviado! Te contactaremos pronto.</div>
