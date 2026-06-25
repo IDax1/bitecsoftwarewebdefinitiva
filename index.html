@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bitec Software Chile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <img src="img/logobitec naranjo.png" alt="Bitec Logo" class="logo-img" />
+        <span class="logo-text">Bitec <span class="logo-accent">Software</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#tecnologias">Tecnologías</a></li>
+        <li><a href="#contacto" class="btn-nav">Contáctanos</a></li>
+        <li><button type="button" class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">🌙</button></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#tecnologias">Tecnologías</a>
+      <a href="#contacto">Contáctanos</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">🚀 Tecnología que impulsa tu negocio</div>
+      <h1>Soluciones de <span class="highlight">Software</span><br />a la medida de Chile</h1>
+      <p class="hero-desc">Desarrollamos software a medida, aplicaciones web y móviles, y transformamos la tecnología en una ventaja competitiva real para tu empresa.</p>
+      <div class="hero-actions">
+        <a href="#contacto" class="btn-primary">Habla con nosotros</a>
+        <a href="#servicios" class="btn-ghost">Ver servicios</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="floating-card card1">
+        <div class="fc-icon">⚡</div>
+        <div>
+          <div class="fc-title">Alta performance</div>
+          <div class="fc-sub">Código optimizado</div>
+        </div>
+      </div>
+      <div class="floating-card card2">
+        <div class="fc-icon">🔒</div>
+        <div>
+          <div class="fc-title">Seguridad</div>
+          <div class="fc-sub">Estándares enterprise</div>
+        </div>
+      </div>
+      <div class="floating-card card3">
+        <div class="fc-icon">☁️</div>
+        <div>
+          <div class="fc-title">Cloud Native</div>
+          <div class="fc-sub">Escalable y confiable</div>
+        </div>
+      </div>
+      <div class="code-window">
+        <div class="cw-header">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="cw-title">bitec_app.js</span>
+        </div>
+        <div class="cw-body">
+          <div class="cw-line"><span class="kw">const</span> <span class="var">bitec</span> = {</div>
+          <div class="cw-line">&nbsp;&nbsp;mision: <span class="str">'Transformar ideas'</span>,</div>
+          <div class="cw-line">&nbsp;&nbsp;vision: <span class="str">'Software de calidad'</span>,</div>
+          <div class="cw-line">&nbsp;&nbsp;pais: <span class="str">'Chile 🇨🇱'</span>,</div>
+          <div class="cw-line">};</div>
+          <div class="cw-line cw-blank"></div>
+          <div class="cw-line"><span class="kw">export default</span> bitec;</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="services" id="servicios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nuestros Servicios</span>
+        <h2>¿Qué podemos hacer <span class="highlight">por ti?</span></h2>
+        <p>Ofrecemos soluciones tecnológicas integrales adaptadas a las necesidades de cada negocio.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">💻</div>
+          <h3>Desarrollo a medida</h3>
+          <p>Construimos software personalizado que se ajusta perfectamente a tus procesos y objetivos de negocio.</p>
+          <ul class="service-list">
+            <li>Análisis y diseño UX/UI</li>
+            <li>Backend robusto y escalable</li>
+            <li>Integraciones API</li>
+          </ul>
+        </div>
+        <div class="service-card featured">
+          <div class="featured-badge">Más solicitado</div>
+          <div class="service-icon">📱</div>
+          <h3>Apps Web y Móviles</h3>
+          <p>Aplicaciones modernas, rápidas y responsivas que funcionan en todos los dispositivos.</p>
+          <ul class="service-list">
+            <li>React / Next.js</li>
+            <li>React Native / Flutter</li>
+            <li>PWA</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">☁️</div>
+          <h3>Cloud & DevOps</h3>
+          <p>Infraestructura en la nube, CI/CD y automatización para que tus equipos entreguen más rápido.</p>
+          <ul class="service-list">
+            <li>AWS / Azure / GCP</li>
+            <li>Docker & Kubernetes</li>
+            <li>Monitoreo 24/7</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🤖</div>
+          <h3>Inteligencia Artificial</h3>
+          <p>Integramos IA y automatización en tus flujos de trabajo para aumentar la productividad.</p>
+          <ul class="service-list">
+            <li>Chatbots y asistentes</li>
+            <li>Análisis predictivo</li>
+            <li>Procesamiento de datos</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🔗</div>
+          <h3>Integraciones ERP</h3>
+          <p>Conectamos tus sistemas existentes con plataformas ERP, CRM y servicios de terceros.</p>
+          <ul class="service-list">
+            <li>SAP / Oracle</li>
+            <li>Salesforce / HubSpot</li>
+            <li>APIs REST & GraphQL</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🛡️</div>
+          <h3>Consultoría TI</h3>
+          <p>Asesoramiento experto para tomar las mejores decisiones tecnológicas en tu empresa.</p>
+          <ul class="service-list">
+            <li>Arquitectura de software</li>
+            <li>Seguridad informática</li>
+            <li>Auditoría tecnológica</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section class="about" id="nosotros">
+    <div class="container about-inner">
+      <div class="about-visual">
+        <div class="about-blob">
+          <div class="about-icon-grid">
+            <div class="aig-item">🏆</div>
+            <div class="aig-item">🤝</div>
+            <div class="aig-item">💡</div>
+            <div class="aig-item">🌎</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <span class="section-tag">Quiénes Somos</span>
+        <h2>Software chileno con<br /><span class="highlight">estándares globales</span></h2>
+        <p>Somos una empresa de tecnología con sede en Chile, enfocada en crear soluciones de software que realmente funcionen para los negocios latinoamericanos. Combinamos el talento local con las mejores prácticas de la industria global.</p>
+        <p>Nuestro equipo está formado por ingenieros apasionados, diseñadores creativos y consultores con experiencia en múltiples industrias.</p>
+        <div class="about-values">
+          <div class="value-item">
+            <span class="value-icon">✅</span>
+            <div>
+              <strong>Calidad ante todo</strong>
+              <p>Cada línea de código pasa por revisión y pruebas exhaustivas.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-icon">⏱️</span>
+            <div>
+              <strong>Entrega a tiempo</strong>
+              <p>Comprometidos con los plazos y la transparencia del proyecto.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-icon">🤝</span>
+            <div>
+              <strong>Socios de largo plazo</strong>
+              <p>No solo desarrollamos, acompañamos el crecimiento de tu empresa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECNOLOGÍAS -->
+  <section class="tech" id="tecnologias">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Stack Tecnológico</span>
+        <h2>Herramientas de <span class="highlight">vanguardia</span></h2>
+        <p>Trabajamos con las tecnologías más modernas y confiables del mercado.</p>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-item"><span>React</span></div>
+        <div class="tech-item"><span>Node.js</span></div>
+        <div class="tech-item"><span>Python</span></div>
+        <div class="tech-item"><span>Next.js</span></div>
+        <div class="tech-item"><span>TypeScript</span></div>
+        <div class="tech-item"><span>PostgreSQL</span></div>
+        <div class="tech-item"><span>Docker</span></div>
+        <div class="tech-item"><span>AWS</span></div>
+        <div class="tech-item"><span>Azure</span></div>
+        <div class="tech-item"><span>Flutter</span></div>
+        <div class="tech-item"><span>Laravel</span></div>
+        <div class="tech-item"><span>Kubernetes</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2>¿Tienes un proyecto en mente?</h2>
+        <p>Cuéntanos tu idea y la convertimos en realidad. Primera consulta sin costo.</p>
+      </div>
+      <a href="#contacto" class="btn-primary btn-large">Comenzar ahora →</a>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto">
+    <div class="container contact-inner">
+      <div class="contact-info">
+        <span class="section-tag">Contacto</span>
+        <h2>Hablemos de tu <span class="highlight">próximo proyecto</span></h2>
+        <p>Estamos listos para ayudarte a llevar tu empresa al siguiente nivel tecnológico.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="ci-icon">📍</span>
+            <div>
+              <strong>Ubicación</strong>
+              <span>Santiago, Chile</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">📧</span>
+            <div>
+              <strong>Email</strong>
+              <span>contacto@bitecsoftware.cl</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">📞</span>
+            <div>
+              <strong>Teléfono</strong>
+              <span>+56 2 XXXX XXXX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <input type="text" placeholder="Tu nombre" required />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Tu correo electrónico" required />
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Empresa (opcional)" />
+        </div>
+        <div class="form-group">
+          <select>
+            <option value="" disabled selected>¿Qué servicio necesitas?</option>
+            <option>Desarrollo a medida</option>
+            <option>App Web o Móvil</option>
+            <option>Cloud & DevOps</option>
+            <option>Inteligencia Artificial</option>
+            <option>Consultoría TI</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Cuéntanos sobre tu proyecto..." rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-full">Enviar mensaje →</button>
+        <div class="form-success" id="form-success">¡Mensaje enviado! Te contactaremos pronto.</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <img src="img/logobitec naranjo.png" alt="Bitec Logo" class="logo-img" />
+          <span class="logo-text">Bitec <span class="logo-accent">Software</span></span>
+        </a>
+        <p>Transformando ideas en soluciones digitales desde Chile para el mundo.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#servicios">Desarrollo a medida</a></li>
+          <li><a href="#servicios">Apps Web y Móviles</a></li>
+          <li><a href="#servicios">Cloud & DevOps</a></li>
+          <li><a href="#servicios">Inteligencia Artificial</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#nosotros">Quiénes somos</a></li>
+          <li><a href="#tecnologias">Tecnologías</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Síguenos</h4>
+        <div class="social-links">
+          <a href="#" class="social-btn">in</a>
+          <a href="#" class="social-btn">tw</a>
+          <a href="#" class="social-btn">gh</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© <span id="copyright-year"></span> Bitec Software Chile. Todos los derechos reservados.</span>
+        <span>Hecho con ❤️ en Chile</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
